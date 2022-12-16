@@ -1,0 +1,120 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue: hsl(217, 54%, 11%);
+  --second-Very-dark-blue: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --main-margin: 20px
+}
+
+body {
+  background-color: var(--Very-dark-blue);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+
+}
+
+p {
+  font-size: 18px;
+}
+
+.card {
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: var(--second-Very-dark-blue);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.card .card-picture {
+  margin-bottom: var(--main-margin);
+}
+
+.card .card-picture img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.card .card-info {
+  color: var(--White);
+}
+
+.card .card-info h1 {
+  margin-bottom: var(--main-margin);
+}
+
+.card .card-info .para {
+  color: var(--Soft-blue);
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: var(--main-margin);
+}
+
+.card .card-info .price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--main-margin);
+  border-bottom: 2px solid var(--Very-dark-blue-line);
+  padding-bottom: 15px;
+}
+
+.card .card-info .price div {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+}
+
+.card .card-info .price .eth p {
+  width: 87px;
+  color: var(--Cyan);
+  font-weight: 600;
+}
+
+.card .card-info .clock p {
+  width: 90px;
+  font-weight: 300;
+  color: var(--Soft-blue);
+}
+
+.card .card-info .creation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card .card-info .creation img {
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.card .card-info .creation p {
+  color: var(--Soft-blue);
+  font-weight: 300;
+}
+
+.card .card-info .creation p span {
+  color: var(--White);
+}
